@@ -9,7 +9,7 @@ $(document).ready(function() {
             $('.ryu-still').show();
     })
         .mousedown(function() {
-            playHadouken();
+           playHadouken();
             $('.ryu-ready').hide();
             $('.ryu-throwing').show();
             $('.hadouken').finish().show()
@@ -26,6 +26,24 @@ $(document).ready(function() {
             $('.ryu-throwing').hide();
             $('.ryu-ready').show();
             // ryu goes back to his ready position
+    });
+    $(document).keydown(function (key){
+        if (key.which == 88){
+            //switch gif
+            $('.ryu-throwing').hide();
+            $('.ryu-ready').hide();
+            $('.ryu-still').hide();
+            $('.ryu-cool').show();
+        }    
+    });
+    $(document).keyup(function (key){
+        if (key.which == 88){
+            //switch gif
+            $('.ryu-throwing').hide();
+            $('.ryu-ready').hide();
+            $('.ryu-still').show();
+            $('.ryu-cool').hide();
+        }    
     });
 });
 function playHadouken () {
