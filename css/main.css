@@ -6,7 +6,7 @@ body {
 p {
     width: 50%;/* changing this to 400px/50% and removing it do strange things-  why? */ 
     color: black;
-    font-size: 3em;
+    font-size: 2em;
     font-family: comical, sans-serif;
 }
 p + p {
